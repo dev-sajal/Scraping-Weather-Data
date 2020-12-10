@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?><testsuite errors="0" failures="1" name="pytest" skips="0" tests="9" time="0.504"><testcase classname="test.TestDataframe" file="test.py" line="13" name="test_df_shape" time="0.0031380653381347656"></testcase><testcase classname="test.TestDataframe" file="test.py" line="16" name="test_num_cols" time="0.0006277561187744141"></testcase><testcase classname="test.TestDataframe" file="test.py" line="19" name="test_cols_names" time="0.0006601810455322266"></testcase><testcase classname="test.TestDataframe" file="test.py" line="23" name="test_col_type" time="0.0017478466033935547"></testcase><testcase classname="test.TestDataframe" file="test.py" line="27" name="test_index" time="0.0004086494445800781"></testcase><testcase classname="test.TestDataframe" file="test.py" line="30" name="test_sanity_check_avg_wind_speed" time="0.006482362747192383"></testcase><testcase classname="test.TestDataframe" file="test.py" line="34" name="test_sanity_check_std_min_temp" time="0.004337787628173828"><failure message="assert 12.34 == 11.79">self = &lt;test.TestDataframe object at 0x7f1d5fe5fcc0&gt;
+
+    def test_sanity_check_std_min_temp(self):
+        std1 = round(np.std(self.df[&quot;2011-04-20&quot;:&quot;2012-01-1&quot;][&quot;Minimum temperature (°F)&quot;]), 2)
+&gt;       assert std1 == 11.79
+E       assert 12.34 == 11.79
+
+test.py:37: AssertionError</failure></testcase><testcase classname="test.TestDataframe" file="test.py" line="38" name="test_sanity_check_std_max_pressure" time="0.004378795623779297"></testcase><testcase classname="test.TestDataframe" file="test.py" line="42" name="test_max_temp" time="0.0036623477935791016"></testcase></testsuite>
